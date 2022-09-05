@@ -64,6 +64,7 @@ public:
             bool flag_existe = false;
             for(it = monomios->begin(); it != monomios->end(); it++){
                 
+                //caso o monomio exista, ele e somado ao termo existente
                 if(p_grau == it->get_grau()){
 
                     it->atualiza_termo(p_multiplicador);
