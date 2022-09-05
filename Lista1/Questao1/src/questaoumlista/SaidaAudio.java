@@ -1,85 +1,44 @@
-
+package questaoumlista;
 import java.util.*;
 
-/**
- * 
- */
 public class SaidaAudio {
-
-    /**
-     * Default constructor
-     */
-    public SaidaAudio() {
-    }
-
-    /**
-     * 
-     */
     private int volume;
-
-    /**
-     * 
-     */
     private String tipoConexao;
-
-    /**
-     * 
-     */
-    private String entradaConectada;
-
-    /**
-     * @return
-     */
-    public void aumentarVolume() {
-        // TODO implement here
-        return null;
+    private String dispositivoSaida;
+    
+    public SaidaAudio() {
+        volume = 50;
+        tipoConexao = "main";
+        dispositivoSaida = "main";
     }
-
-    /**
-     * @return
-     */
+    
+    public void aumentarVolume(){
+        if(volume < 100)
+            volume++;
+        else
+            avisoVolume("maximo");
+    }
+    
     public void diminuirVolume() {
-        // TODO implement here
-        return null;
+        if(volume > 0)
+            volume--;
+        else
+            avisoVolume("minimo");
     }
-
-    /**
-     * @return
-     */
+    
     public String retornaConexao() {
-        // TODO implement here
-        return "";
+        return tipoConexao;
     }
-
-    /**
-     * @return
-     */
-    public String retornaEntrada() {
-        // TODO implement here
-        return "";
+    
+    public String retornaDispositivoSaida() {
+        return dispositivoSaida;
     }
-
-    /**
-     * @return
-     */
+    
     public int retornaVolume() {
-        // TODO implement here
-        return 0;
+        return volume;
     }
-
-    /**
-     * @return
-     */
-    private void avisoVolume() {
-        // TODO implement here
-        return null;
+    
+    private void avisoVolume(String aviso) {
+        System.out.println("O volume ja esta no " + aviso + ".");
     }
-
-    /**
-     * 
-     */
-    public void Operation1() {
-        // TODO implement here
-    }
-
 }

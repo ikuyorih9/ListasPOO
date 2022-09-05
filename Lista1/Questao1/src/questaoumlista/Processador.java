@@ -1,67 +1,33 @@
-
+package questaoumlista;
 import java.util.*;
 
-/**
- * 
- */
 public class Processador {
-
-    /**
-     * Default constructor
-     */
-    public Processador() {
-    }
-
-    /**
-     * 
-     */
     private float frequencia;
-
-    /**
-     * 
-     */
     private int qtdCores;
-
-    /**
-     * 
-     */
     private float cache;
-
-    /**
-     * 
-     */
     private int temperatura;
 
-    /**
-     * @return
-     */
-    public float retornaFrequencia() {
-        // TODO implement here
-        return 0.0f;
+    public Processador(float frequencia, int qtdCores, float cache, int temperatura){
+        this.frequencia = frequencia;
+        this.qtdCores = qtdCores;
+        this.cache = cache;
+        this.temperatura = temperatura;
     }
 
-    /**
-     * @return
-     */
-    public float retornaCache() {
-        // TODO implement here
-        return 0.0f;
+    public float retornaFrequencia(){
+        return frequencia;
     }
 
-    /**
-     * @return
-     */
-    private void pararProcessos() {
-        // TODO implement here
-        return null;
+    public float retornaCache(){
+        return cache;
     }
 
-    /**
-     * @return
-     */
-    public void verificaTemperatura() {
-        // TODO implement here
-        return null;
+    public void verificaTemperatura(){
+        if(temperatura > 70)  pararProcessos();
+    }
+    
+    private void pararProcessos(){
+        System.out.println("parando alguns processos!");
     }
 
 }
