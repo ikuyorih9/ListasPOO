@@ -329,7 +329,7 @@
 											"top": 327,
 											"width": 204.15966796875,
 											"height": 13,
-											"text": "Dispositivo de Rede"
+											"text": "Dispositivo_de_Rede"
 										},
 										{
 											"_type": "LabelView",
@@ -628,7 +628,7 @@
 											"top": 327,
 											"width": 210.869140625,
 											"height": 13,
-											"text": "Dispositivo de Impressão"
+											"text": "Dispositivo_de_Impressão"
 										},
 										{
 											"_type": "LabelView",
@@ -909,7 +909,7 @@
 											"top": 327,
 											"width": 311.060546875,
 											"height": 13,
-											"text": "Dispositivo de Video"
+											"text": "Dispositivo_de_Video"
 										},
 										{
 											"_type": "LabelView",
@@ -2108,7 +2108,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Dispositivo de Rede",
+					"name": "Dispositivo_de_Rede",
 					"ownedElements": [
 						{
 							"_type": "UMLGeneralization",
@@ -2305,7 +2305,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Dispositivo de Impressão",
+					"name": "Dispositivo_de_Impressão",
 					"ownedElements": [
 						{
 							"_type": "UMLGeneralization",
@@ -2457,7 +2457,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Dispositivo de Video",
+					"name": "Dispositivo_de_Video",
 					"ownedElements": [
 						{
 							"_type": "UMLGeneralization",
