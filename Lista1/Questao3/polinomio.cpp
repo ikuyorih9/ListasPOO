@@ -6,7 +6,7 @@
 using namespace std;
 
 //classe que representa cada monomio do polinomio
-class termo {
+class Termo {
 
 private:
 
@@ -15,7 +15,7 @@ private:
 
 public:
 
-    void inicia(int p_grau, float p_multiplicador){
+    Termo(int p_grau, float p_multiplicador){
         grau = p_grau;
         multiplicador = p_multiplicador;
     }
@@ -38,18 +38,24 @@ public:
 
 };
 
-class polinomio {
+class Polinomio {
 
 private:
 
     int grau_max;
-    list <termo> *monomios = new list <termo>; 
-    list <termo>::iterator it;
+    list <Termo> *monomios = new list <Termo>; 
+    list <Termo>::iterator it;
 
 public:
 
-    void inicia(int p_grau) {
+    //construtor
+    Polinomio(int p_grau) {
         grau_max = p_grau;
+    }
+
+    //destrutor
+    ~Polinomio(){
+        delete monomios;
     }
 
     void add(int p_grau, float p_multiplicador){
@@ -77,8 +83,7 @@ public:
             //se nao existe adiciona
             if(!flag_existe){
                 
-                termo temp;
-                temp.inicia(p_grau, p_multiplicador);
+                Termo temp(p_grau, p_multiplicador);
                 monomios->push_front(temp);
 
             }
@@ -95,8 +100,8 @@ public:
         for(it = monomios->begin(); it != monomios->end(); it++){
             it->mostra_termo();
         }
-
-        cout << endl;
+        
+        cout << "\b\b" << " " << endl;// apaga sinal '+' extra
 
     }
 
@@ -116,19 +121,18 @@ public:
 
 int main(void) {
 
-    polinomio P;
     int p_grau;
     
     cout << "Digite o grau max do polinomio: " << endl;
     cin >> p_grau;
 
-    P.inicia(p_grau);
-
+    Polinomio P(p_grau);
     int op = 0;
 
     //loop que apresenta as acoes possiveis 
     while(op != 4){
-
+    
+        //impressao do menu
         cout << "Digite a operacao desejada: " << endl;
         cout << "1 - Adicionar Monomio" << endl;
         cout << "2 - Mostrar Polinomio" << endl;
