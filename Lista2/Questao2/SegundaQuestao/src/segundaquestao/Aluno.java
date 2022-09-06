@@ -2,19 +2,23 @@ package segundaquestao;
 
 public class Aluno {
     private String nome;
-    private Matricula matricula = new Matricula();
+    private String matricula;
+    //private Matricula matricula = new Matricula();
     
-    public Aluno(String nome){
+    //CONSTRUTOR.
+    public Aluno(String nome, String matricula){
         this.nome = nome;
+        this.matricula = matricula;
     }
-    public void fazerMatricula(String idMatricula){
-        matricula.adicionarID(idMatricula);
+    
+    //RETORNA NOME DO ALUNO.
+    public String retornarNome(){
+        return nome;
     }
-    public void mostrarNome(){
-        System.out.print(nome);
-    }
-    public void mostrarMatricula(){
-        matricula.mostrarID();
+    
+    //RETORNA NUMERO DE MATRICULA DO ALUNO.
+    public String retornarMatricula(){
+        return matricula;
     }
 
 }
