@@ -1,1 +1,1 @@
-you wont believe but this is a note.
+Implementação em linguagem C++ do terceiro exercício da primeira lista.
