@@ -3,10 +3,10 @@
 <body>
   <p>
       Alunos: <br>
-              &nbspDaniel Contente Romanzini;<br>
-              &nbspGabriel Henrique Brioto;<br>
-              &nbspGuilherme Chiarotto de Moraes;<br>
-              &nbspHugo Hiroyuki Nakamura.<br>
+      &nbsp&nbsp Daniel Contente Romanzini;<br>
+      &nbsp&nbsp Gabriel Henrique Brioto;<br>
+      &nbsp&nbsp Guilherme Chiarotto de Moraes;<br>
+      &nbsp&nbsp Hugo Hiroyuki Nakamura.<br>
   </p>
   
 </body>
