@@ -7,4 +7,8 @@ public class Produto {
     public Produto(){
         status = "desativado";
     }
+    
+    public String retornarStatus(){
+        return status;
+    }
 }

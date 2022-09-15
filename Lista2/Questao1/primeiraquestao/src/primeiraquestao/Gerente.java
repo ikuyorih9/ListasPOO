@@ -6,6 +6,13 @@ public class Gerente {
     
     public void aceitarProduto(Produto produto){
         //VERIFICA PRODUTO PENDENTE.
+        if(produto.retornarStatus() == "PENDENTE"){
+            
+        }
+        else{
+            System.out.println("Nao e possivel aceitar produto.");
+            System.out.println("STATUS: " + produto.retornarStatus());
+        }
         //
     }
     
