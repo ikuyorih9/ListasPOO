@@ -13,7 +13,7 @@ public class Gerente {
             System.out.println("Nao e possivel aceitar produto.");
             System.out.println("STATUS: " + produto.retornarStatus());
         }
-        //
+        
     }
     
 }
