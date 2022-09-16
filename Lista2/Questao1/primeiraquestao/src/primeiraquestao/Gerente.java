@@ -5,15 +5,13 @@ public class Gerente {
     private Cliente clientes[] = new Cliente[10];
     
     public void aceitarProduto(Produto produto){
-        //VERIFICA PRODUTO PENDENTE.
-        if(produto.retornarStatus() == "PENDENTE"){
+        if(!produto.retornarAtivacao() && produto.verificaDados()){
+            produto.mudarAtivacao(true);
+            System.out.println("Produto aceito");
+        }
+        else
+                System.out.println("Produto nao aceito");
             
-        }
-        else{
-            System.out.println("Nao e possivel aceitar produto.");
-            System.out.println("STATUS: " + produto.retornarStatus());
-        }
-        
     }
     
 }
