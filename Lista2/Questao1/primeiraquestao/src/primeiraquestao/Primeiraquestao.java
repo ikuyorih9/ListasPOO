@@ -1,21 +1,47 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package primeiraquestao;
 
-/**
- *
- * @author 12732037
- */
 public class Primeiraquestao {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        //CRIA UMA CONTA BANCARIA.
+        ContaBancaria conta = new ContaBancaria("101427");
+        
+        //CRIA UM GERENTE.
+        Gerente hugo = new Gerente("Hugo");
+
+        //CRIAR E REGISTRAR CLIENTE "Asafe";
+        Cliente asafe = new Cliente("Asafe");
+        hugo.registrarCliente(asafe);
+        
+        //ASAFE SOLICITA CONTA BANCARIA.
+        int idAsafe = asafe.retornarID();
+        ContaBancaria novaConta;
+        novaConta = (hugo.retornarCliente(idAsafe)).solicitarContaBancaria();
+        hugo.aceitarProduto(novaConta, idAsafe);
+        
+        //ASAFE RETIRA DINHEIRO
+        asafe.retornarConta().transferir(100);
+        
+        //ASAFE PEDE UM EMPRESTIMO de 1000.
+        idAsafe = asafe.retornarID();
+        Emprestimo emp;
+        emp = (hugo.retornarCliente(idAsafe)).solicitarEmprestimo(1000);
+        hugo.aceitarProduto(emp, idAsafe);
+        
+        //ASAFE PEDE UM CARTAO.
+        idAsafe = asafe.retornarID();
+        CartaoCredito cartao;
+        cartao = (hugo.retornarCliente(idAsafe)).solicitarCartao();
+        hugo.aceitarProduto(novaConta, idAsafe);
+        /*
+        if(prod instanceof ContaBancaria){
+            ContaBancaria a = (ContaBancaria)prod;
+        }
+       */
+        
+          
+        
     }
     
 }

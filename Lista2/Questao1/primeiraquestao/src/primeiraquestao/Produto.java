@@ -2,24 +2,21 @@
 package primeiraquestao;
 
 public abstract class Produto {
-    private String status;
     private boolean ativado;
     
     public Produto(){
-        status = "";
         ativado = false;
     }
     
-    public abstract boolean verificaDados();
+    //FUNÇÃO DE VERIFICAÇÃO PRÉ ACEITAÇÃO PELO GERENTE.
+    public abstract boolean verificarDados();
     
-    public String retornarStatus(){
-        return status;
-    }
-    
+    //RETORNA SE PRODUTO ESTIVER ATIVADO.
     public boolean retornarAtivacao(){
         return ativado;
     }
     
+    //MUDA ATIVAÇÃO PRO MODO ESCOLHIDO.
     public void mudarAtivacao(boolean modo){
         ativado = modo;
     }

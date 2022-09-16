@@ -1,19 +1,16 @@
 package primeiraquestao;
 
 public class Emprestimo extends Produto {
-    float valor;
-    ContaBancaria conta;
-    
     public float valor;
     public ContaBancaria conta;
     
-    public Emprestimo(ContaBancaria conta, float valor){
+    public Emprestimo(float valor){
         this.valor = valor;
-        this.conta = conta;
     }
     
-    public boolean verificaDados(){
-        if(conta.retornarSaldo() >= 0 && valor <= 10*conta.retornarSaldo())
+    //VERIFICA SE ESTA TUDO OK COM O EMPRESTIMO.
+    public boolean verificarDados(){
+        if(conta.retornarSaldo() >= 0)
             return true;
         else
             return false;
