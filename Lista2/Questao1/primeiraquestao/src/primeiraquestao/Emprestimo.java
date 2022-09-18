@@ -2,7 +2,6 @@ package primeiraquestao;
 
 public class Emprestimo extends Produto {
     public float valor;
-    public ContaBancaria conta;
     
     public Emprestimo(float valor){
         this.valor = valor;
