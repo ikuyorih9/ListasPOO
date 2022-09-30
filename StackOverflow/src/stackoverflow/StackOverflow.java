@@ -19,6 +19,10 @@ public class StackOverflow {
         MyObject obj = new MyObject();
         obj.MyMethod();//inicia a recursão que irá gerar a excessão de StackOverflow
         
+        /*
+        [...]
+        */
+        
     }
     
 }
