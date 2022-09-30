@@ -10,4 +10,9 @@ public class MyObject {
     public int MyMethod(){
         return MyMethod();
     }
+    
+   /*
+   [...]
+    */
+    
 }
