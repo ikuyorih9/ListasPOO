@@ -1,3 +1,16 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/* 
+ * File:   complex.cpp
+ * Author: ACER
+ * 
+ * Created on 30 de Outubro de 2022, 22:26
+ */
+
 #include "complex.h"
 #include <iostream>
 #include <cmath>
@@ -62,3 +75,4 @@ void complex::operator/=(const complex &outro) {
 double complex::operator%(const complex &number) {
     return sqrt(pow(real, 2) + pow(img, 2));
 }
+

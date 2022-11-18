@@ -1,7 +1,22 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: ACER
+ *
+ * Created on 30 de Outubro de 2022, 22:26
+ */
+
 #include "complex.h"
 #include <iostream>
 #include <vector>
 #include <cstdlib>
+#include <ctime>
+#include <cmath>
 
 using namespace std;
 
