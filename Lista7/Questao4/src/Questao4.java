@@ -1,7 +1,7 @@
 import java.lang.Math;
 import java.util.*;
 
-public class App {
+public class Questao4 {
     public static void main(String[] args) throws Exception {
 
         ArrayList<Double> array = new ArrayList<Double>();
