@@ -65,6 +65,6 @@
          </font>
       </Label>
       <Label fx:id="resultado_label" layoutX="108.0" layoutY="322.0" prefHeight="30.0" prefWidth="279.0" style="-fx-background-color: #eeecec;" />
-      <Button fx:id="inserir_button" layoutX="184.0" layoutY="132.0" mnemonicParsing="false" onAction="#inserir" text="OK!" />
+      <Button fx:id="ok_button" layoutX="184.0" layoutY="132.0" mnemonicParsing="false" onAction="#inserir" text="OK!" />
     </children>
 </AnchorPane>
