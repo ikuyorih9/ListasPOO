@@ -165,7 +165,14 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void calcular(){
         if(!x_textField.getText().isEmpty()){
-            
+            double x = Double.parseDouble(x_textField.getText());
+            double resultado = x5*Math.pow(x, 5);
+            resultado += x4*Math.pow(x, 4);
+            resultado += x3*Math.pow(x, 3);
+            resultado += x2*Math.pow(x, 2);
+            resultado += x1*x;
+            resultado += x0;
+            resultado_label.setText(String.valueOf(resultado));
         }
         else{
             System.out.println("ERRO");

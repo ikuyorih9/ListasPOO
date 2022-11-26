@@ -15,6 +15,8 @@ public class Questao2 extends Application {
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
+        stage.setTitle("Polinomios");
+        stage.setResizable(false);
         stage.show();
     }
 
