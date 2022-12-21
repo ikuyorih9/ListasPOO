@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="servidor_interface.ServidorFXMLController">
+    <children>
+      <Label layoutX="11.0" layoutY="14.0" prefHeight="18.0" prefWidth="90.0" text="Endereço de IP:" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="219.0" AnchorPane.topAnchor="14.0" />
+      <TextField fx:id="ip_txtField" editable="false" layoutX="114.0" layoutY="10.0" prefHeight="26.0" prefWidth="197.0" text="localhost" AnchorPane.rightAnchor="8.4" />
+      <Button fx:id="conectar_button" layoutX="8.0" layoutY="87.0" mnemonicParsing="false" onAction="#conectar" prefHeight="26.0" prefWidth="297.0" text="Conectar!" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.813999999999965" />
+      <Label layoutX="11.0" layoutY="53.0" prefHeight="18.0" prefWidth="90.0" text="Porta:" />
+      <TextField fx:id="porta_txtField" editable="false" layoutX="112.0" layoutY="49.0" prefHeight="26.0" prefWidth="197.0" text="8008" AnchorPane.rightAnchor="10.399999999999977" />
+      <ListView fx:id="mensagem_listView" layoutX="8.0" layoutY="186.0" prefHeight="177.0" prefWidth="198.0" style="-fx-background-color: #e3dfd5;" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" />
+      <TextField fx:id="chat_txtField" disable="true" layoutX="220.0" layoutY="214.0" prefHeight="26.0" prefWidth="142.0" AnchorPane.rightAnchor="8.4" />
+      <Button fx:id="enviar_button" disable="true" layoutX="220.0" layoutY="250.0" mnemonicParsing="false" onAction="#enviar" prefHeight="26.0" prefWidth="141.0" text="Enviar!" AnchorPane.rightAnchor="8.4" />
+      <Label fx:id="status_label" alignment="CENTER" layoutX="120.0" layoutY="127.0" prefHeight="18.0" prefWidth="147.0" text="Você não está conectado!" AnchorPane.leftAnchor="8.4" AnchorPane.rightAnchor="8.4" />
+    </children>
+</AnchorPane>
